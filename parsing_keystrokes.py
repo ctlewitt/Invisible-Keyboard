@@ -97,7 +97,7 @@ def find_next_word(keystrokes, dictionary):
     return all_words
 
 
-dictionary = get_dictionary("mind_reading_words.txt")
+dictionary = get_dictionary("dictionary.txt")
 
 keystrokes = ["k3","k1","k4","t2","k4","k7","k5","k4","t2","k2","k1","k5","k1","k4","k3","t2","k5","k3","k1","k7","k2","t2","k1","t2","k3","k1","k5"]
 
