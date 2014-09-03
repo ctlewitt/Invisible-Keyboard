@@ -36,8 +36,8 @@
       <file leaf-file-name="parsing_keystrokes.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/parsing_keystrokes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4701087" vertical-offset="1357" max-vertical-offset="1725">
-              <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.2853261" vertical-offset="0" max-vertical-offset="1725">
+              <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -388,8 +388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/parsing_keystrokes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4701087" vertical-offset="1357" max-vertical-offset="1725">
-          <caret line="102" column="49" selection-start-line="102" selection-start-column="49" selection-end-line="102" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.2853261" vertical-offset="0" max-vertical-offset="1725">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
           <folding />
         </state>
       </provider>
