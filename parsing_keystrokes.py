@@ -1,4 +1,8 @@
-KEYSTROKE_CHARACTERS = {"k1": ["a", "q", "z"], "k2": ["s", "w", "x"], "k3": ["d", "e"], "k4": ["b","c","f","g","r","t","v"], "k5": ["h","j","m","n","u","y"], "k6":["i","k"], "k7":["l","o"], "k8":["p"]}
+import time
+import gevent
+
+
+KEYSTROKE_CHARACTERS = {"a": ["a", "q", "z"], "s": ["s", "w", "x"], "d": ["d", "e"], "f": ["b","c","f","g","r","t","v"], "j": ["h","j","m","n","u","y"], "k":["i","k"], "l":["l","o"], ";":["p"]}
 VOWELS = ["a", "e", "i", "o", "u", "y"]
 
 
@@ -6,7 +10,7 @@ def break_into_words(keystrokes):
     words = []
     word = []
     for keystroke in keystrokes:
-        if keystroke == "t1" or keystroke == "t2":
+        if keystroke == " " or keystroke == " ": #keeping residual "double option" because it could be either thumb that hits the "keyboard"
             words.append(word)
             word = []
         else:
@@ -97,10 +101,14 @@ def find_next_word(keystrokes, dictionary):
     return all_words
 
 
+
 dictionary = get_dictionary("dictionary.txt")
 
 #keystrokes = ["k3","k1","k4","t2","k4","k7","k5","k4","t2","k2","k1","k5","k1","k4","k3","t2","k5","k3","k1","k7","k2","t2","k1","t2","k3","k1","k5"]
-keystrokes = ["k6","t1","k7","k6","k6","k3","t1","k4","k4","k3","k1","k5","t1","k4","k5","k3","k3","k2","k3"]
+#keystrokes = ["k6","t1","k7","k6","k6","k3","t1","k4","k4","k3","k1","k5","t1","k4","k5","k3","k3","k2","k3"]
+
+keystrokes = raw_input("type words here: ")
+start = time.time()
 
 words = break_into_words(keystrokes)
 
@@ -108,3 +116,7 @@ sentence = []
 for word in words:
     sentence.append(find_next_word(word, dictionary))
 print sentence
+
+end = time.time()
+
+print "it took " + str(end-start) + " 'units'"
