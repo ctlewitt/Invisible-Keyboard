@@ -6,29 +6,33 @@ import re
 def get_ngram_words(file_name):
 #reads file in and turns into list of lists
     words = []
+    old_word = ""
+    total_frequency = 0
     with open(file_name) as f:
-        for line in f:
-            ngram_info = re.match('(.+?)(_.*|)\t[0-9]*\t([0-9]*)\t[0-9]*\n', line)
-            ngram_info_words = ngram_info.groups()
-            new_word = ngram_info_words[0]
-            new_word_frequency = ngram_info_words[2]
-            words.append([new_word, new_word_frequency])
-    return words
+        with open("new_one_gram_a.txt", "w") as new_f:
+            for line in f:
+                ngram_info = re.match('(.+?)(_.*|)\t[0-9]*\t([0-9]*)\t[0-9]*\n', line)
+                ngram_info_words = ngram_info.groups()
+                new_word = ngram_info_words[0]
+                new_word_frequency = int(ngram_info_words[2])
+#                .*[.'|\d]+.*
+                if new_word == old_word:
+                    total_frequency += new_word_frequency
+                    old_word = new_word
+                else:
+                    new_f.write(old_word + "\t" + str(total_frequency) + "\n")#write old_word \t total_frequency to new_one_gram_a.txt
+                    total_frequency = new_word_frequency
+                    old_word = new_word
+    return
 
-#for each line of 1-gram file
-    #grab word (either up to the underscore or up to the tab
-    #ignore the year
-    #grab the frequency count
-    #ignore the volume count
-    #append the mini list of word and frequency to the 1-gram list of lists
+
+#def remove_extra_ngrams(file_name):
+#    with open(file_name) as f:
 
 
-#remove duplicates, either by reprocessing the list or by getting it right the first time, using "old word" and "total count"
-#update list when "old word" is not equal to "new word".  otherwise, add to total count and keep going.
-#make empty no duplicates 1-gram list of lists
-#for mini list in 1-gram list of lists, if
+get_ngram_words("one_gram_a.txt")
 
-one_gram_a_words = get_ngram_words("one_gram_a.txt")
+#remove_extra_ngrams("new_one_gram_a.txt")
 #test_line = "A.Briggs_NOUN	1885	7	3\n"
 #words = []
 #ngram_info = re.match('(.+?)(_.*|)\t[0-9]*\t([0-9]*)\t[0-9]*\n', test_line)
@@ -37,5 +41,3 @@ one_gram_a_words = get_ngram_words("one_gram_a.txt")
 #new_word_frequency = ngram_info_words[2]
 #words.append([new_word, new_word_frequency])
 #print words
-print one_gram_a_words[0]
-print one_gram_a_words[len(one_gram_a_words)-1]
