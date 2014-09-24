@@ -1,9 +1,13 @@
 import re
 
-#set up 1-gram list of lists
+#download each letter's 1-gram data from Google n-grams and save each file as
+#one_gram_a.txt, one_gram_b.txt, etc
+#run this file on each one to combine all the word counts from each year
+#for example, we want the total usage for "are" throughout all the scans,
+#not a separate count for "are" in 1917 and 1918 and 1919...
+#will create a new file called new_one_gram_a.txt or new_one_gram_b.txt, etc.
 
-
-def get_ngram_words(file_name):
+def combine_ngram_words(file_name):
 #reads file in and turns into list of lists
     words = []
     old_word = ""
@@ -25,19 +29,4 @@ def get_ngram_words(file_name):
                     old_word = new_word
     return
 
-
-#def remove_extra_ngrams(file_name):
-#    with open(file_name) as f:
-
-
-get_ngram_words("one_gram_a.txt")
-
-#remove_extra_ngrams("new_one_gram_a.txt")
-#test_line = "A.Briggs_NOUN	1885	7	3\n"
-#words = []
-#ngram_info = re.match('(.+?)(_.*|)\t[0-9]*\t([0-9]*)\t[0-9]*\n', test_line)
-#ngram_info_words = ngram_info.groups()
-#new_word = ngram_info_words[0]
-#new_word_frequency = ngram_info_words[2]
-#words.append([new_word, new_word_frequency])
-#print words
+combine_ngram_words("one_gram_a.txt")

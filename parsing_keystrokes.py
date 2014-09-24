@@ -1,5 +1,4 @@
 import time
-import gevent
 
 
 KEYSTROKE_CHARACTERS = {"a": ["a", "q", "z"], "s": ["s", "w", "x"], "d": ["d", "e"], "f": ["b","c","f","g","r","t","v"], "j": ["h","j","m","n","u","y"], "k":["i","k"], "l":["l","o"], ";":["p"]}
@@ -108,20 +107,21 @@ print len(dictionary)
 #keystrokes = ["k3","k1","k4","t2","k4","k7","k5","k4","t2","k2","k1","k5","k1","k4","k3","t2","k5","k3","k1","k7","k2","t2","k1","t2","k3","k1","k5"]
 #keystrokes = ["k6","t1","k7","k6","k6","k3","t1","k4","k4","k3","k1","k5","t1","k4","k5","k3","k3","k2","k3"]
 
+quit = False
+while not quit:
+    keystrokes = raw_input("type words here: (q to quit) ")
+    if keystrokes == "q":
+        quit = True
+    else:
+    #   start = time.time()
+        words = break_into_words(keystrokes)
 
-keystrokes = raw_input("type words here: ")
-start = time.time()
+        sentence = []
+        for word in words:
+            sentence.append(find_next_word(word, dictionary))
+        print sentence
 
 
+#end = time.time()
 
-words = break_into_words(keystrokes)
-
-sentence = []
-for word in words:
-    sentence.append(find_next_word(word, dictionary))
-print sentence
-
-
-end = time.time()
-
-print "it took " + str(end-start) + " 'units'"
+#print "it took " + str(end-start) + " 'units'"

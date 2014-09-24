@@ -1,0 +1,295 @@
+Stats on words starting with each letter
+a:
+num_words: 293168
+min_frequency: 40
+max_frequency: 16897068165
+total_frequency: 65579720148
+average_frequency: 223693
+
+b:
+num_words: 228183
+min_frequency: 40
+max_frequency: 3443696810
+total_frequency: 25639303752
+average_frequency: 112362
+
+c:
+num_words: 323086
+min_frequency: 40
+max_frequency: 1252889396
+total_frequency: 30067898916
+average_frequency: 93064
+
+d:
+num_words: 203894
+min_frequency: 40
+max_frequency: 967807672
+total_frequency: 18478246271
+average_frequency: 90626
+
+e:
+num_words: 177109
+min_frequency: 40
+max_frequency: 504462089
+total_frequency: 15700405735
+average_frequency: 88648
+
+f:
+num_words: 154402
+min_frequency: 40
+max_frequency: 4865520200
+total_frequency: 23155078690
+average_frequency: 149966
+
+g:
+num_words: 149385
+min_frequency: 40
+max_frequency: 419165562
+total_frequency: 9983057474
+average_frequency: 66827
+
+h:
+num_words: 167824
+min_frequency: 40
+max_frequency: 3464013246
+total_frequency: 25553864901
+average_frequency: 152265
+
+i:
+num_words: 160469
+min_frequency: 40
+max_frequency: 12150333792
+total_frequency: 40455132175
+average_frequency: 252105
+
+j:
+num_words: 57034
+min_frequency: 40
+max_frequency: 396478614
+total_frequency: 3561958382
+average_frequency: 62453
+
+k:
+num_words: 122012
+min_frequency: 40
+max_frequency: 369381397
+total_frequency: 3005929300
+average_frequency: 24636
+
+l:
+num_words: 166797
+min_frequency: 40
+max_frequency: 600642625
+total_frequency: 14442526138
+average_frequency: 86587
+
+m:
+num_words: 260997
+min_frequency: 40
+max_frequency: 1139971711
+total_frequency: 22977643067
+average_frequency: 88037
+
+n:
+num_words: 132516
+min_frequency: 40
+max_frequency: 3553476066
+total_frequency: 13599989078
+average_frequency: 102629
+
+o:
+num_words: 128650
+min_frequency: 40
+max_frequency: 21838631073
+total_frequency: 41436335243
+average_frequency: 322085
+
+p:
+num_words: 301385
+min_frequency: 40
+max_frequency: 482807186
+total_frequency: 24607039464
+average_frequency: 81646
+
+q:
+num_words: 22720
+min_frequency: 40
+max_frequency: 152942123
+total_frequency: 1268435606
+average_frequency: 55829
+
+r:
+num_words: 181568
+min_frequency: 40
+max_frequency: 333979769
+total_frequency: 16053032779
+average_frequency: 88413
+
+s:
+num_words: 388040
+min_frequency: 40
+max_frequency: 1312222075
+total_frequency: 39344442100
+average_frequency: 101392
+
+t:
+num_words: 229021
+min_frequency: 40
+max_frequency: 38105910639
+total_frequency: 88083218532
+average_frequency: 384607
+
+u:
+num_words: 76075
+min_frequency: 40
+max_frequency: 799652722
+total_frequency: 6759929925
+average_frequency: 88858
+
+v:
+num_words: 94031
+min_frequency: 40
+max_frequency: 534922913
+total_frequency: 4962991879
+average_frequency: 52780
+
+w:
+num_words: 99596
+min_frequency: 40
+max_frequency: 4174115932
+total_frequency: 31596672288
+average_frequency: 317248
+
+x:
+num_words: 11644
+min_frequency: 40
+max_frequency: 145666083
+total_frequency: 328350523
+average_frequency: 28199
+
+y:
+num_words: 26261
+min_frequency: 40
+max_frequency: 2259968686
+total_frequency: 5147294540
+average_frequency: 196005
+
+z:
+num_words: 32330
+min_frequency: 40
+max_frequency: 32046943
+total_frequency: 313568848
+average_frequency: 9699
+
+
+
+
+AGGREGATE RESULTS:
+a:
+    count: 293168
+    prcnt: 6.99986175435%
+    want:  11.602%
+b:
+    count: 228183
+    prcnt: 5.4482394214%
+    want:  4.702%
+c:
+    count: 323086
+    prcnt: 7.71420255542%
+    want:  3.511%
+d:
+    count: 203894
+    prcnt: 4.8683001301%
+    want:  2.670%
+e:
+    count: 177109
+    prcnt: 4.22876478828%
+    want:  2.007%
+f:
+    count: 154402
+    prcnt: 3.68659831426%
+    want:  3.779%
+g:
+    count: 149385
+    prcnt: 3.56680929765%
+    want:  1.950%
+h:
+    count: 167824
+    prcnt: 4.00707034554%
+    want:  7.232%
+i:
+    count: 160469
+    prcnt: 3.83145778482%
+    want:  6.286%
+j:
+    count: 57034
+    prcnt: 1.36177930503%
+    want:  .597%
+k:
+    count: 122012
+    prcnt: 2.91323450162%
+    want:  .590%
+l:
+    count: 166797
+    prcnt: 3.98254905392%
+    want:  2.705%
+m:
+    count: 260997
+    prcnt: 6.23172692211%
+    want:  4.374%
+n:
+    count: 132516
+    prcnt: 3.16403454756%
+    want:  2.365%
+o:
+    count: 128650
+    prcnt: 3.0717275238%
+    want:  6.264%
+p:
+    count: 301385
+    prcnt: 7.19605596394%
+    want:  2.545%
+q:
+    count: 22720
+    prcnt: 0.542476870119%
+    want:  .173%
+r:
+    count: 181568
+    prcnt: 4.33523064937%
+    want:  1.653%
+s:
+    count: 388040
+    prcnt: 9.26508471306%
+    want:  7.755%
+t:
+    count: 229021
+    prcnt: 5.46824803131%
+    want:  16.671%
+u:
+    count: 76075
+    prcnt: 1.81641407985%
+    want:  1.487%
+v:
+    count: 94031
+    prcnt: 2.24514271893%
+    want:  .649%
+w:
+    count: 99596
+    prcnt: 2.37801612484%
+    want:  6.753%
+x:
+    count: 11644
+    prcnt: 0.278019395936%
+    want:  .017%
+y:
+    count: 26261
+    prcnt: 0.627023991469%
+    want:  1.620%
+z:
+    count: 32330
+    prcnt: 0.77193121527%
+    want:  .034%
+
+
+Total Word Count: 4188197.0
+Average Frequency: 136598.652297
