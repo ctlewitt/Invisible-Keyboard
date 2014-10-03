@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <style>
+        div.word_column {
+        padding-right:15px;
+        float:left;
+        }
+
+        div.sentence{
+        width:1000px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Translation</title>
+</head>
+<body>
+
+You wrote:<br>
+<div class="sentence">
+    {% for possible_words in sentence %}
+        <div class="word_column">
+            {% for word in possible_words %}
+                {{ word }}<br>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</div>
+</body>
+</html>

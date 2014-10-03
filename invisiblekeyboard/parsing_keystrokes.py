@@ -32,25 +32,16 @@ def find_next_word(keystrokes, dictionary):
         possible_words = ["NOT FOUND"]
     return possible_words
 
+def parse_keystrokes(keystrokes):
+    dictionary = get_dictionary("RZ_edit_data_structure.txt")
+#    dictionary = get_dictionary("intersecting_words_data_structure.txt")
+    #words_data_structure.txt is a list (separated by wordlength) of key-value pairs of keystrokes and list of possibly intended words
+    #with each list sorted by frequency of use, according to Google 1-grams (see other files for how the 1-grams were pre-processed)
 
-dictionary = get_dictionary("words_data_structure.txt")
-#words_data_structure.txt is a list (separated by wordlength) of key-value pairs of keystrokes and list of possibly intended words
-#with each list sorted by frequency of use, according to Google 1-grams (see other files for how the 1-grams were pre-processed)
+#    keystrokes = raw_input("type words here: (q to quit) ")
+    words = break_into_words(keystrokes)
 
-quit = False
-while not quit:
-    keystrokes = raw_input("type words here: (q to quit) ")
-    if keystrokes == "q":
-        quit = True
-    else:
-    #   start = time.time()
-        words = break_into_words(keystrokes)
-
-        sentence = []
-        for word in words:
-            sentence.append(find_next_word(word, dictionary))
-        print sentence
-
-#end = time.time()
-
-#print "it took " + str(end-start) + " 'units'"
+    sentence = []
+    for word in words:
+        sentence.append(find_next_word(word, dictionary))
+    return sentence
