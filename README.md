@@ -15,12 +15,12 @@ Currently this does the following:<br>
 2) After pressing "Submit for Translation," the sequences of finger presses are translated into possible words, sorted by word use frequency.  
 
 This relies on Google's word frequency data, which has been cleaned up and merged with a list of the most commonly used English words.  For speed, these words have been sorted by frequency and mapped to possible finger-press combinations for quick retrieval.  
-The outer folder contains the files used to clean the Google 1-gram data, merge it with a list of frequently used words, and create a data stucture for quick retrieval.  The inner folder contains the files used to take users input and display the words they meant to type.  
+The outer folder contains the files used to clean the Google 1-gram data, merge it with a list of frequently used words, and create a data stucture for quick retrieval.  The inner folder contains the files used to take users' input and display the words they meant to type.  
 
 Possible next steps:<br>
 1) process finger-presses and display words as they're typed, instead of waiting for typing to finish<br>
 2) allow user to add words to "dictionary"<br>
-3) allow users to train to software to interpret words based on their personal typing style (log in to access your already trained software.)  This would probably work by associating a user with a dictionary that matches their typing style, or create a new one if no existing one matches their typing style.  
+3) allow users to train to software to interpret words based on their personal typing style (log in to access your already trained software.)  This would probably work by associating a user with a dictionary/data structure that matches their typing style, or create a new one if no existing one matches their typing style.  
 
 Google N-Gram Data used (I used the 1-gram data, for single words' frequencies):<br>
 http://storage.googleapis.com/books/ngrams/books/datasetsv2.html
