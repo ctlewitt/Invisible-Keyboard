@@ -5,7 +5,7 @@ Invisible keyboard project for the purpose of reading Zach's mother's mind.  (Or
 
 Zach did the hardware (gloves, arduino). I (Charley) did the software (processing word frequency data, interpreting input from gloves, displaying results) which is hosted here.
 
-This is meant to be used with a pair of gloves with censors in the fingertips to detect finger presses.  (To be used instead of a keyboard.)  The gloves send signals indicating finger presses to the computer, which displays the most likely words the user meant to type.  
+This is meant to be used with a pair of gloves with censors in the fingertips to detect finger presses (to be used instead of a keyboard.)  The gloves send signals indicating finger presses to the computer, which displays the most likely words the user meant to type.  
 
 To test this online, visit the Google App Engine site below.  Type words using only the characters: a, s, d, f, j, k, l, ;, and space to represent the finger presses corresponding to the left pinky finger, left ring finger, left middle finger, left pointer, right pointer, right middle finger, right ring finger, right pinkey, and either thumb, respectively.  Your mileage may vary for this, as everyone types a little differently.  (e.g., some people type a 'b' with their left pointer, while others type it with their right pointer.) 
 http://invisible-keyboard.appspot.com/
