@@ -1,9 +1,9 @@
 Invisible-Keyboard
 ==================
 
-Invisible keyboard project for the purpose of reading Zach's mother's mind.  (Or predicting what words are being typed based on finger-linked keystrokes on an invisible keyboard.)  
+Invisible keyboard project for the purpose of reading Zach's mother's mind.  (Or predicting what words are being typed based on finger-presses detected by gloves.)  
 
-Zach did the hardware. I did the software.
+Zach did the hardware (gloves, arduino). I did the software (processing word frequency data, interpreting input from gloves, displaying results) which is hosted here.
 
 This is meant to be used with a pair of gloves with censors in the fingertips to detect finger presses.  (To be used instead of a keyboard.)  The gloves send signals indicating finger presses to the computer, which displays the most likely words the user meant to type.  
 
